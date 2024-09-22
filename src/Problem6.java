@@ -34,8 +34,12 @@ public class Problem6 {
                 String[] terms = line.split(" ",2);
                 String studentName = terms[0];
                 String[] studentScores = terms[1].split(" ");
-                System.out.println(calculateAverage(studentScores));
-                System.out.printf("%s Grade: %s\n",studentName,calculateGrade(calculateAverage(studentScores))); 
+                System.out.printf(
+                    "%s\n\taverage: %d\n\tGrade: %s\n",
+                    studentName,
+                    calculateAverage(studentScores),
+                    calculateGrade(calculateAverage(studentScores))
+                ); 
             }
             s.close();
         } catch (FileNotFoundException e) {

@@ -1,8 +1,7 @@
 import java.util.TreeMap;
-import java.util.Arrays;
 
 public class Problem5 {
-    public static void getCount(Iterable<Integer> numbers){
+    public static void getCount(int[] numbers){
         TreeMap<Integer,Integer> map = new TreeMap<>();
         for(int num:numbers){
             if(num == -999){
@@ -21,6 +20,7 @@ public class Problem5 {
         }
     }
     public static void main(String[] args) {
-        getCount(Arrays.asList(35,67,88,88,45,34,34,-999,1,35,1,35,1,89));
+        int[] numbers= {35,67,88,88,45,34,34,-999,1,35,1,35,1,89};
+        getCount(numbers);
     }
 }
