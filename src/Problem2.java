@@ -18,8 +18,8 @@ public class Problem2{
     return internationalDate;
   } 
   public static void main(String[] args) {
-    Problem2 D = new Problem2();
-    D.convert("December 25,1998");
+    Problem2 date = new Problem2();
+    date.convert("December 25,1998");
 
   }
 }

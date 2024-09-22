@@ -1,16 +1,26 @@
 public class Problem1 {
     public void printOut(){
-        for (int i = 1; i <=6; i++){
-            for (int k = 6; k >= i ; k-- )
-            System.out.print("*");
+        for (int i = 0; i <7; i++){
+            for (int stars = 6; stars > i ; stars-- ){
+                System.out.print("*");
+            }
+            for (int space = 0; space<i ;space++){
+                System.out.print(" ");
+            }
             System.out.print(" ");
-            for (int j = 0; j<12 ;j++)
-                
-                System.out.print("/");
-            
+            for (int fSlash = 6; fSlash > i ; fSlash-- ){
+                System.out.print("//");
+            }
+            for (int bSlash = 0; bSlash<i ;bSlash++){
+                System.out.print("\\\\");
+            }
             System.out.print(" ");
-            for (int k = 6; k >= i ; k-- )
-            System.out.print("*");
+            for (int space = 0; space<i ;space++){
+                System.out.print(" ");
+            }
+            for (int stars = 6; stars > i ; stars-- ){
+                System.out.print("*");
+            }
         System.out.println();
         }
     }

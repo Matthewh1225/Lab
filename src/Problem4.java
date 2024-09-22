@@ -1,32 +1,22 @@
 import java.util.Scanner;
 
 public class Problem4 {
-    
-    Scanner s = new Scanner(System.in);
-    
-    public void sum(){
-        System.out.println("enter a number: ");
-        int input = s.nextInt();
-        input = Math.abs(input);
-
-        String newInput = Integer.toString(input);
-        int length = newInput.length();
-        int[] numList = new int[length];
-
-        for (int i = 0 ;i < length; i++){
-            numList[i] = Character.getNumericValue(newInput.charAt(i));
-        
+    public static void sum(String number){
+        int sum = 0;
+        for(int i =0;i<number.length();i++){
+            char c = number.charAt(i);
+            if (!Character.isDigit(c)){
+                continue;
+            }
+            System.out.print(c+" ");
+            sum += Character.getNumericValue(c);
         }
-        int total = 0;
-        for (int number : numList){
-             
-            System.out.println(number);
-            total+=number;  
-        }
-        System.out.printf("Sum = "+total); 
+        System.out.printf("\nSum = %d \n",sum);
     }
     public static void main(String[] args) {
-        Problem4 p = new Problem4();
-        p.sum(); 
+        System.out.println("Enter a number: ");
+        Scanner s = new Scanner(System.in);
+        sum(s.nextLine());
+        s.close();
     }
 }
