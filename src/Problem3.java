@@ -28,8 +28,6 @@ public class Problem3 {
     }
     public static void main(String[] args) {
         Problem3 p = new Problem3();
-        p.getGrade(56);
-     
-       
+        p.getGrade(56);  
     }
 }
