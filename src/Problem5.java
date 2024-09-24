@@ -20,7 +20,7 @@ public class Problem5 {
         }
     }
     public static void main(String[] args) {
-        int[] numbers= {35,67,88,88,45,34,34,-999,1,35,1,35,1,89};
+        int[] numbers= {35,67,88,88,45,34,34,1,1,1,1,3,3,3,-999,1,35,1,35,1,89};
         getCount(numbers);
     }
 }
