@@ -24,7 +24,7 @@ public class Problem1 {
         System.out.println();
         }
     }
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         Problem1 a = new Problem1();
         a.printOut();  
     }
