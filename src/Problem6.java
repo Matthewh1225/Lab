@@ -35,7 +35,7 @@ public class Problem6 {
                 String studentName = terms[0];
                 String[] studentScores = terms[1].split(" ");
                 System.out.printf(
-                    "%s\n\taverage: %d\n\tGrade: %s\n",
+                    "%s\n\tAverage Grade: %d\n\tLetter Grade: %s\n",
                     studentName,
                     calculateAverage(studentScores),
                     calculateGrade(calculateAverage(studentScores))
